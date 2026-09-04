@@ -52,9 +52,17 @@
       muted
       loop
       playsinline
-      controls>
+      controlsList="nodownload"
+      disablePictureInPicture>
     </video>
   </div>
+
+  <script>
+    // Disable right-click on the video
+    document.querySelector("video").addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
+  </script>
 
 </body>
 </html>
