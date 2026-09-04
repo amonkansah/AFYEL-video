@@ -48,19 +48,13 @@
   <div class="video-container">
     <video
       src="video.mp4"
+      autoplay
+      muted
       loop
       playsinline
-      controlsList="nodownload"
-      disablePictureInPicture>
+      controls>
     </video>
   </div>
-
-  <script>
-    // Disable right-click on the video
-    document.querySelector("video").addEventListener("contextmenu", function(e) {
-      e.preventDefault();
-    });
-  </script>
 
 </body>
 </html>
